@@ -2,23 +2,40 @@
 
 using System; 
 
-public class Program {
-
-  public static void Main(string[] args)
+public class Book
   {
-    Console.Write("Enter the * limit : ");
-    int n = Convert.ToInt32(Console.ReadLine());
-    for (int i = 1; i <= n; i++)
-    {
-      for (int j = 1; j <= (n - i); j++)
-      {
-        Console.Write(" ");
-      }
-      for (int k = 1; k < i * 2; k++)
-      {
-        Console.Write("*");
-      }
-      Console.WriteLine();
-    }
+  string bname = "";
+  string aname = "";
+  int price = 0;
+
+  public void getData()
+  {
+    Console.Write("Enter book name: ");
+    bname = Convert.ToString(Console.ReadLine());
+    Console.Write("Enter author name: ");
+    aname = Convert.ToString(Console.ReadLine());
+    Console.Write("Enter book price: ");
+    price = Convert.ToInt32(Console.ReadLine());
+  }
+
+  public void display()
+  {
+    Console.WriteLine($"The book {bname} written by {aname} is of {price}");
   }
 }
+
+public class Program
+  {
+      static void Main(string[] args)
+      {
+    Book[] b = new Book[5];
+    for(int i = 0; i <5; i++)
+          {
+      b[i] = new Book();
+      b[i].getData();
+      b[i].display();
+      
+          }
+  }
+}
+
