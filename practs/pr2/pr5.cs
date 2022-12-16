@@ -1,3 +1,4 @@
+// WAP in c# to create star pyramid pattern
 using System; 
 
 public class Program {

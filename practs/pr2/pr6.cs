@@ -1,4 +1,5 @@
-// 
+// Write a p to declare a class book having d members bookname , authorname and price of book
+// accept this data for 5 books and display the same 
 
 using System; 
 
