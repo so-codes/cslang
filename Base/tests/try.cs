@@ -1,19 +1,20 @@
 using System;
+class Program {
+  public static void main(){
+    int number , sum = 0;
+    Coonsole.WriteLine("Enter number: ");
+    number = int.Parse(Console.ReadLine());
 
-public class Program {
+    for(int i = 1;i<number; i++){
+      if(number % i == 0){
+        sum = sum + i;
+      }
+    }
 
- public static void Main(string[] args)
- {
-   int n1 = 0, n2 = 1, n3, i, number;
-   Console.Write("Enter the number of elements: ");
-   number = int.Parse(Console.ReadLine());
-   Console.Write(n1 + " " + n2 + " ");   
-   for (i = 2; i < number; ++i) {
-       n3 = n1 + n2;
-       Console.Write(n3 + " ");
-       n1 = n2;
-       n2 = n3;
-   }
-   Console.WriteLine("");
- }
+    if(sum == number){
+      Console.WriteLine("Entered number is a perfect number");
+    } else {
+      Console.WriteLine("Entered number is not a perfect number");
+    }
+  } 
 }

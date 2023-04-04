@@ -1,8 +1,7 @@
 using System;
 public class PoopException : Exception
 {
-    public PoopException(string message) : base(message)
-    {
+    public PoopException {
         Console.WriteLine("PoopException: {0}", message);
     }
 }
@@ -13,7 +12,7 @@ public class Program
     {
         try
         {
-            throw new PoopException("Poop!");
+            throw new PoopException();
         }
         catch (PoopException e)
         {
