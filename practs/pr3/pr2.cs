@@ -4,7 +4,7 @@
 using System; 
 public class Program
 {
-public static void swapInt(ref int num1, ref int num2)
+    public static void swapInt(ref int num1, ref int num2)
     {
         int temp = num1;
         num1 = num2;

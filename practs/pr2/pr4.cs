@@ -20,7 +20,7 @@ public class Program {
             Console.Write(" " + k);
             k++;
         }
-        Console.WriteLine("\n");
+        Console.WriteLine("");
     }
   }
 }
