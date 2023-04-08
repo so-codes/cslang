@@ -1,0 +1,14 @@
+Practical 6: DHCP & DNS Configuration
+ROUTER 1
+>enable
+#conf t
+#Host r1
+#int f0/0
+#ip add 192.168.1.1 255.255.255.0
+#no shut
+#ip dhcp pool Lab4
+#network 192.168.1.0 255.255.255.0
+#default - router 192.168.1.1
+#ctrl z
+
+SERVER 

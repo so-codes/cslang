@@ -1,0 +1,34 @@
+Practical 4: RIP Configuration
+
+ROUTER1
+>enable
+conf t
+#host r1
+#int serial0/1/0
+#ip add 10.10.0.1 255.0.0.0
+#no shut
+#exit
+#int g0/0
+#ip add 192.168.0.1 255.255.255.0
+11#no shut
+#exit
+#router rip
+#network 10.10.0.0
+#network 192.168.0.0
+#^Z
+
+ROUTER2
+>enable
+conf t
+#host r2
+#int serial0/1/0
+#ip add 10.10.0.2 255.0.0.0
+#no shut
+#exit
+#int g0/0
+#ip add 172.116.0.1 255.255.255.0
+#no shut
+#exit
+#router rip
+#network 10.10.0.0
+#network
